@@ -1,11 +1,11 @@
 package org.nickharle.osgpetclinic.services.map;
 
 import org.nickharle.osgpetclinic.model.Pet;
-import org.nickharle.osgpetclinic.services.CrudService;
+import org.nickharle.osgpetclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Set<Pet> findall() {
