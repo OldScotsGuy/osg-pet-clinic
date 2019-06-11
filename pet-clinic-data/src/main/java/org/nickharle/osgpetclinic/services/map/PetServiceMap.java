@@ -2,9 +2,11 @@ package org.nickharle.osgpetclinic.services.map;
 
 import org.nickharle.osgpetclinic.model.Pet;
 import org.nickharle.osgpetclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
