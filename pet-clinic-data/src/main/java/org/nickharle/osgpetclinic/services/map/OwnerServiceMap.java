@@ -43,7 +43,6 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
                             // Pet type not yet persisted (id is null) so persist this pet type
                             pet.setPetType(petTypeService.save(pet.getPetType()));
                         }
-
                     }
 
                     // Handle Pet id - make sure the pet object has the persisted pet id
