@@ -1,13 +1,13 @@
 package org.nickharle.osgpetclinic.services.map;
 
 import org.nickharle.osgpetclinic.model.Speciality;
-import org.nickharle.osgpetclinic.services.SpecialtiesService;
+import org.nickharle.osgpetclinic.services.SpecialtyService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class SpecialitiesServiceMap extends AbstractMapService<Speciality, Long> implements SpecialtiesService {
+public class SpecialityServiceMap extends AbstractMapService<Speciality, Long> implements SpecialtyService {
 
     @Override
     public Set<Speciality> findall() {
