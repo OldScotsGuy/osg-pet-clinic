@@ -1,10 +1,7 @@
 package org.nickharle.osgpetclinic.bootstrap;
 
 import org.nickharle.osgpetclinic.model.*;
-import org.nickharle.osgpetclinic.services.OwnerService;
-import org.nickharle.osgpetclinic.services.PetTypeService;
-import org.nickharle.osgpetclinic.services.SpecialtyService;
-import org.nickharle.osgpetclinic.services.VetService;
+import org.nickharle.osgpetclinic.services.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -17,13 +14,15 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialtyService specialtyService;
+    private final VisitService visitService;
 
     public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService,
-                      SpecialtyService specialtyService) {
+                      SpecialtyService specialtyService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.specialtyService = specialtyService;
+        this.visitService = visitService;
     }
 
     @Override
@@ -76,9 +75,9 @@ public class DataLoader implements CommandLineRunner {
         Owner owner2 = new Owner();
         owner2.setFirstName("Doris");
         owner2.setLastName("Day");
-        owner1.setAddress("1 Country Lane");
-        owner1.setCity("Nashville");
-        owner1.setTelephone("654321");
+        owner2.setAddress("1 Country Lane");
+        owner2.setCity("Nashville");
+        owner2.setTelephone("654321");
         Pet dorisPet = new Pet();
         dorisPet.setName("Tabby");
         dorisPet.setOwner(owner2);
@@ -88,6 +87,13 @@ public class DataLoader implements CommandLineRunner {
         ownerService.save(owner2);
 
         System.out.println("Loaded Owners ... ");
+
+        // Define and persist visits
+        Visit catVisit = new Visit();
+        catVisit.setPet(dorisPet);
+        catVisit.setData(LocalDate.now());
+        catVisit.setDescription("Ill Cat");
+        visitService.save(catVisit);
 
         // Define and persist vets
         Vet vet1 = new Vet();
