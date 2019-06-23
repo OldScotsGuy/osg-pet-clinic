@@ -33,17 +33,16 @@ public class OwnerSDJpaService implements OwnerService {
 
     @Override
     public Set<Owner> findall() {
-
         Set<Owner> owners = new HashSet<>();
         ownerRepository.findAll().forEach(owners::add );
         return owners;
     }
 
     @Override
-    public Owner findById(Long aLong) {
+    public Owner findById(Long id) {
         //Optional<Owner> optionalOwner = ownerRepository.findById(aLong);
         //return optionalOwner.orElse(null);
-        return ownerRepository.findById(aLong).orElse(null);
+        return ownerRepository.findById(id).orElse(null);
     }
 
     @Override
