@@ -33,7 +33,7 @@ public class OwnerController {
 
     @GetMapping("/{ownerid}")
     public ModelAndView showOwner(@PathVariable("ownerid") Long ownerid) {
-        ModelAndView nav = new ModelAndView("/owner/ownerDetails");
+        ModelAndView nav = new ModelAndView("/owners/ownerDetails");
         nav.addObject(ownerService.findById(ownerid));
         return nav;
     }
