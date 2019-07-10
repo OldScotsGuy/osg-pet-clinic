@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.validation.constraints.Null;
 import java.util.List;
 
 @RequestMapping("/owners")
@@ -43,7 +42,9 @@ public class OwnerController {
     public String processFindForm(Owner owner, BindingResult result, Model model) {
         // Allow parameterless GET request for /owners to return all results
         if (owner.getLastName() == null) {
-            owner.setLastName("");  // empty string signifies broadest possible search
+            owner.setLastName("%");  // empty string signifies broadest possible search
+        } else {
+            owner.setLastName("%" + owner.getLastName() + "%");
         }
 
         // find owners by last name
@@ -60,7 +61,7 @@ public class OwnerController {
         } else {
             // multiple owners found
             model.addAttribute("selections", results);
-            return "/owners/ownerList";
+            return "/owners/ownersList";
         }
 
     }
