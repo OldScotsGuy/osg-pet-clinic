@@ -110,7 +110,7 @@
         <repository>
             <id>github</id>
             <name>Heroku Deployment Branch</name>
-            <url>${project.build.directory}/mvn-repo</url>
+            <url>https://github.com/OldScotsGuy/osg-pet-clinic/mvn-repo</url>
         </repository>
     </distributionManagement>
 
