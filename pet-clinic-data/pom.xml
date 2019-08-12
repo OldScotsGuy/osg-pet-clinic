@@ -3,7 +3,7 @@
     <parent>
         <artifactId>osg-pet-clinic</artifactId>
         <groupId>org.nickharle</groupId>
-        <version>0.0.8</version>
+        <version>0.0.9</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -83,4 +83,8 @@
         </plugins>
     </build>
 
+
+  <scm>
+    <tag>osg-pet-clinic-0.0.9</tag>
+  </scm>
 </project>
