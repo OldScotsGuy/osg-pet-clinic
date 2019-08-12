@@ -101,14 +101,14 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:OldScotsGuy/osg-pet-clinic.git</developerConnection>
-        <tag>osg-pet-clinic-0.0.8</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
         <repository>
-            <id></id>
+            <id>staging</id>
             <name>Heroku Deployment Repository</name>
-            <url>git@github.com:OldScotsGuy/heroku-deployment.git</url>
+            <url>https://github.com/OldScotsGuy/heroku-deployment.git</url>
         </repository>
     </distributionManagement>
 
