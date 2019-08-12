@@ -99,19 +99,6 @@
         </plugins>
     </build>
 
-<!--    <repositories>
-        <repository>
-            <id>heroku-deployment</id>
-            <url>git@github.com:OldScotsGuy/heroku-deployment.git</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories> -->
-
     <scm>
         <developerConnection>scm:git:git@github.com:OldScotsGuy/osg-pet-clinic.git</developerConnection>
         <tag>osg-pet-clinic-0.0.8</tag>
@@ -119,8 +106,9 @@
 
     <distributionManagement>
         <repository>
-            <id>heroku-deployment</id>
-            <url>https://github.com/OldScotsGuy/heroku-deployment.git</url>
+            <id></id>
+            <name>Heroku Deployment Repository</name>
+            <url>git@github.com:OldScotsGuy/heroku-deployment.git</url>
         </repository>
     </distributionManagement>
 
