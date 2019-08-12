@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>org.nickharle</groupId>
-  <artifactId>osg-pet-clinic</artifactId>
+  <artifactId>pet-clinic-data</artifactId>
   <versioning>
     <versions>
       <version>0.0.16-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20190812224339</lastUpdated>
+    <lastUpdated>20190812224350</lastUpdated>
   </versioning>
 </metadata>
