@@ -18,7 +18,7 @@
 
     <groupId>org.nickharle</groupId>
     <artifactId>osg-pet-clinic</artifactId>
-    <version>0.0.8</version>
+    <version>0.0.8-snapshot</version>
 
     <name>osg-pet-clinic</name>
     <description>Pet Clinic Tutorial Project</description>
