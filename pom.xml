@@ -106,7 +106,7 @@
 
     <distributionManagement>
         <repository>
-            <id>staging</id>
+            <id>github</id>
             <name>Heroku Deployment Repository</name>
             <url>https://github.com/OldScotsGuy/heroku-deployment.git</url>
         </repository>
