@@ -106,7 +106,7 @@
     <distributionManagement>
         <site>
             <id>Github</id>
-            <url>scm:git:git@github.com:OldScotsGuy/heroku-deployment.git</url>
+            <url>git@github.com:OldScotsGuy/heroku-deployment.git</url>
         </site>
     </distributionManagement>
 
