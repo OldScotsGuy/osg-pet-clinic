@@ -3,12 +3,12 @@
     <parent>
         <artifactId>osg-pet-clinic</artifactId>
         <groupId>org.nickharle</groupId>
-        <version>0.0.13-SNAPSHOT</version>
+        <version>0.0.13</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>pet-clinic-data</artifactId>
-  <version>0.0.8</version>
+  <version>0.0.13</version>
 
     <properties>
         <!-- Produce simple for fat jar -->
