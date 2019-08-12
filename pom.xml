@@ -106,12 +106,4 @@
         <tag>HEAD</tag>
     </scm>
 
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>Heroku Deployment Branch</name>
-            <url>https://github.com/OldScotsGuy/osg-pet-clinic/mvn-repo</url>
-        </repository>
-    </distributionManagement>
-
 </project>
