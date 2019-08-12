@@ -100,7 +100,8 @@
     </build>
 
     <scm>
-        <developerConnection>scm:git:https://github.com/OldScotsGuy/osg-pet-clinic.git</developerConnection>
+        <connection>scm:git:git@github.com:old-scots-guy/osg-pet-clinic.git</connection>
+        <developerConnection>scm:git:git@github.com:old-scots-guy/heroku-deployment</developerConnection>
       <tag>HEAD</tag>
   </scm>
 
