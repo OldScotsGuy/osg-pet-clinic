@@ -101,8 +101,13 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:OldScotsGuy/osg-pet-clinic.git</developerConnection>
-        <connection>scm:git:git@github.com:OldScotsGuy/heroku-deployment-test.git</connection>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
+    <distributionManagement>
+        <site>
+            <id>Github</id>
+            <url>scm:git:git@github.com:OldScotsGuy/heroku-deployment.git</url>
+        </site>
+    </distributionManagement>
 
 </project>
