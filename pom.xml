@@ -18,7 +18,7 @@
 
     <groupId>org.nickharle</groupId>
     <artifactId>osg-pet-clinic</artifactId>
-    <version>0.0.5-SNAPSHOT</version>
+    <version>0.0.5</version>
 
     <name>osg-pet-clinic</name>
     <description>Pet Clinic Tutorial Project</description>
@@ -101,7 +101,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:OldScotsGuy/osg-pet-clinic.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>osg-pet-clinic-0.0.5</tag>
     </scm>
     <distributionManagement>
         <site>
