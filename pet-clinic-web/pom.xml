@@ -3,11 +3,12 @@
     <parent>
         <artifactId>osg-pet-clinic</artifactId>
         <groupId>org.nickharle</groupId>
-        <version>0.0.9</version>
+        <version>0.0.10-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>pet-clinic-web</artifactId>
+  <version>0.0.8</version>
 
     <properties>
         <!-- Web dependencies -->
@@ -21,7 +22,7 @@
         <dependency>
             <groupId>org.nickharle</groupId>
             <artifactId>pet-clinic-data</artifactId>
-            <version>0.0.9</version>
+            <version>0.0.8</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -142,8 +143,4 @@
             </plugin>
         </plugins>
     </build>
-
-  <scm>
-    <tag>osg-pet-clinic-0.0.9</tag>
-  </scm>
 </project>
