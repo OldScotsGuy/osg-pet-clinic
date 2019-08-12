@@ -104,10 +104,10 @@
         <tag>HEAD</tag>
     </scm>
     <distributionManagement>
-        <site>
+        <repository>
             <id>Github</id>
             <url>git@github.com:OldScotsGuy/heroku-deployment.git</url>
-        </site>
+        </repository>
     </distributionManagement>
 
 </project>
