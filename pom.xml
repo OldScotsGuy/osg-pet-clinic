@@ -103,7 +103,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:OldScotsGuy/osg-pet-clinic.git</developerConnection>
-        <tag>heroku-0-0-1</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
