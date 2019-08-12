@@ -108,7 +108,7 @@
         <repository>
             <id>github</id>
             <name>Heroku Deployment Repository</name>
-            <url>https://github.com/OldScotsGuy/heroku-deployment.git</url>
+            <url>https://github.com/OldScotsGuy/heroku-deployment</url>
         </repository>
     </distributionManagement>
 
